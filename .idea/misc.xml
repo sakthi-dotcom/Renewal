@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="../../../../layout/custom_preview.xml" value="0.10581534772182254" />
+        <entry key="../../Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_dropdown_item.xml" value="0.24166666666666667" />
+        <entry key="../../Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_item.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/drawable/calendar.xml" value="0.1725" />
+        <entry key="app/src/main/res/drawable/email.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/gradient.xml" value="0.1685" />
+        <entry key="app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.1765" />
+        <entry key="app/src/main/res/drawable/ic_baseline_arrow_back_24.xml" value="0.128" />
+        <entry key="app/src/main/res/drawable/ic_baseline_delete_24.xml" value="0.174" />
+        <entry key="app/src/main/res/drawable/ic_baseline_edit_calendar_24.xml" value="0.1765" />
+        <entry key="app/src/main/res/drawable/ic_baseline_exit_to_app_24.xml" value="0.1685" />
+        <entry key="app/src/main/res/drawable/shape_background.xml" value="0.1685" />
+        <entry key="app/src/main/res/layout/activity_add_new_domain.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_add_new_ssl.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_main.xml" value="0.21" />
+        <entry key="app/src/main/res/layout/activity_main2.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/layout/activity_main3.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/activity_main4.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/layout/activity_main5.xml" value="0.21" />
+        <entry key="app/src/main/res/layout/activity_main6.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/layout/activity_main8.xml" value="0.1358695652173913" />
+        <entry key="app/src/main/res/layout/activity_register.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/layout/activity_signin.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/layout/activity_ssl.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/layout/activity_ssl_edit.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/layout/add_item.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/card_layout.xml" value="0.22" />
+        <entry key="app/src/main/res/layout/card_layout2.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/card_layouy.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/detail_item.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_domain.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/layout/fragment_domain2.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/layout/fragment_logout.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/layout/fragment_logout2.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/layout/fragment_ssl.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/layout/fragment_ssl2.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/layout/list_item.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/list_view.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/nav_header.xml" value="0.240625" />
+        <entry key="app/src/main/res/menu/app_bar_menu.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/menu/bottom_nav.xml" value="0.240625" />
+        <entry key="app/src/main/res/menu/menu.xml" value="0.240625" />
+        <entry key="app/src/main/res/menu/nav_menu.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/menu/tool_bar.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/xml/network_security_config.xml" value="0.24166666666666667" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="VisualizationToolProject">
+    <option name="state">
+      <ProjectState>
+        <option name="scale" value="0.2265625" />
+      </ProjectState>
+    </option>
+  </component>
+</project>

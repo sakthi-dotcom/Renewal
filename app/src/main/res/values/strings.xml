@@ -1,0 +1,82 @@
+<resources>
+    <string name="app_name">Renewal</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <!--<string name="hello_blank_fragment">Hello blank fragment</string>-->
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+    <string name="head_title1">augustasoftsol.com</string>
+    <string name="head_title2">augustahitech.com</string>
+    <string name="head_title3">ada-solution.com</string>
+    <string name="head_title4">augusta-coderepo.com</string>
+    <string name="head_title5">ondemand-caption.com</string>
+
+
+    <string name="sub_head_title1">Issuer:GoDaddy.com,Inc.</string>
+    <string name="sub_head_title2">Issuer:GoDaddy.com,Inc.</string>
+    <string name="sub_head_title3">Issuer:GoDaddy.com,Inc.</string>
+    <string name="sub_head_title4">Issuer:GoDaddy.com,Inc.</string>
+    <string name="sub_head_title5">Issuer:GoDaddy.com,Inc.</string>
+
+    <string name="head1">augustasoftsol.com</string>
+    <string name="head2">augustahitech.com</string>
+    <string name="head3">ada-solution.com</string>
+    <string name="head4">augusta-coderepo.com</string>
+    <string name="head5">ondemand-caption.com</string>
+
+    <string name="val1">Validity</string>
+    <string name="val2">Validity</string>
+    <string name="val3">Validity</string>
+    <string name="val4">Validity</string>
+    <string name="val5">Validity</string>
+
+
+    <string name="d1">augustasoftsol.com</string>
+    <string name="d2">augusta-stg.com</string>
+    <string name="d3">augusta-coderepo.com</string>
+    <string name="d4">augustahitech.com</string>
+    <string name="d5">ada-solution.com</string>
+    <string name="d6">miami-mobile-application-development.com</string>
+    <string name="d7">miami-business-startups.com</string>
+    <string name="d8">south-florida-startups.com</string>
+    <string name="d9">miami-software-developments.com</string>
+    <string name="d10">pichaitrust.org</string>
+    <string name="d11">augusta-innovation.com</string>
+    <string name="d12">ondemand-caption.com</string>
+    <string name="d13">praeverse.earth</string>
+    <string name="d14">ahlabs.tech</string>
+
+
+    <string name="i1">Issuer:GoDaddy.com,Inc.</string>
+    <string name="i2">Issuer:GoDaddy.com,Inc.</string>
+    <string name="i3">Issuer:GoDaddy.com,Inc.</string>
+    <string name="i4">Issuer:GoDaddy.com,Inc.</string>
+    <string name="i5">Issuer:GoDaddy.com,Inc.</string>
+    <string name="i6">Issuer:GoDaddy.com,Inc.</string>
+    <string name="i7">Issuer:GoDaddy.com,Inc.</string>
+    <string name="i8">Issuer:GoDaddy.com,Inc.</string>
+    <string name="i9">Issuer:GoDaddy.com,Inc.</string>
+    <string name="i10">Issuer:GoDaddy.com,Inc.</string>
+    <string name="i11">Issuer:GoDaddy.com,Inc.</string>
+    <string name="i12">Issuer:GoDaddy.com,Inc.</string>
+    <string name="i13">Issuer:GoDaddy.com,Inc.</string>
+    <string name="i14">Issuer:GoDaddy.com,Inc.</string>
+
+
+    <string-array name="CertificateType">
+
+        <item>STANDARD SSL</item>
+        <item>STANDARD WILDCARD SSL</item>
+    </string-array>
+
+    <string-array name="renewal">
+
+        <item>Yes</item>
+        <item>No</item>
+    </string-array>
+
+
+</resources>

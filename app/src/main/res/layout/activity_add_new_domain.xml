@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    tools:context=".activity.MainActivity7">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_margin="16dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:text="New Domain"
+            android:textStyle="bold"
+            android:textSize="19sp"
+            android:textColor="@color/ah"
+            android:padding="10dp"
+            android:elevation="15dp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/userName1"
+            android:hint="Domain Name"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:background="@drawable/shape_background"
+            android:padding="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/issuedBy1"
+            android:hint="Issued By"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:background="@drawable/shape_background"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <EditText
+            android:id="@+id/issuedTo2"
+            android:hint="Issued To"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:background="@drawable/shape_background"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+
+        <EditText
+            android:id="@+id/issuedOn1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginBottom="15dp"
+            android:background="@drawable/shape_background"
+            android:drawableEnd="@drawable/calendar"
+            android:hint="Issued On(dd/mm/yyyy)"
+            android:inputType="date"
+            android:padding="15dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
+        <EditText
+            android:id="@+id/expires1"
+            android:hint="Expires On(dd/mm/yyyy)"
+            android:inputType="date"
+            android:textColor="@color/black"
+            android:background="@drawable/shape_background"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:drawableEnd="@drawable/calendar"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Auto Renewal Enabled?"
+            android:textColor="@color/black"
+            android:layout_marginHorizontal="25dp"/>
+
+        <EditText
+            android:id="@+id/autoRenew1"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:spinnerMode="dropdown"
+            android:hint="Yes or No"
+            android:background="@drawable/shape_background"
+            android:padding="15dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="15dp"
+            android:layout_width="match_parent"
+            android:layout_height="55dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/postBtn2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Add"/>
+</LinearLayout>

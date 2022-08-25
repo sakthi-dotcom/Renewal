@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.ssldomainmaintenance">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.SSlDomainMaintenance"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="31">
+        <activity
+            android:name=".RegisterActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity8"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity7"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity6"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity5"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity4"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity3"
+            android:exported="false" />
+        <activity
+            android:name=".activity.MainActivity2"
+            android:exported="false" />
+        <!--
+ <activity
+            android:name=".SSLActivity"
+            android:exported="false" />
+        -->
+        <activity
+            android:name=".activity.MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.SigninActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.splashScreenActivity"
+            android:exported="true"
+            android:theme="@style/Theme.ToolBarActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
