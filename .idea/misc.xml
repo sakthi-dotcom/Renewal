@@ -30,8 +30,8 @@
         <entry key="app/src/main/res/layout/activity_ssl.xml" value="0.24166666666666667" />
         <entry key="app/src/main/res/layout/activity_ssl_edit.xml" value="0.24166666666666667" />
         <entry key="app/src/main/res/layout/add_item.xml" value="0.240625" />
-        <entry key="app/src/main/res/layout/card_layout.xml" value="0.22" />
-        <entry key="app/src/main/res/layout/card_layout2.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/card_layout.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/card_layout2.xml" value="0.25" />
         <entry key="app/src/main/res/layout/card_layouy.xml" value="0.240625" />
         <entry key="app/src/main/res/layout/detail_item.xml" value="0.2" />
         <entry key="app/src/main/res/layout/fragment_domain.xml" value="0.24166666666666667" />

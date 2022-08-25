@@ -190,7 +190,7 @@ class MainActivity6 : AppCompatActivity() {
             }
 
             override fun onFailure(call: Call<AddSslDataModel?>, t: Throwable) {
-                TODO("Not yet implemented")
+
             }
         })
     }
