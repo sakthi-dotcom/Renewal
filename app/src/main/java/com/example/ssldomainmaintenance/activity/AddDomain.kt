@@ -13,6 +13,6 @@ interface AddDomain {
                    @Query("ISSUED_ON") issued_on:Long,
                    @Query("EXPIRES_ON")expires_on:Long):Call<update>
 
-    @DELETE("api/Domain/HardDeleteDomain")
+    @DELETE("api/Domain/SoftDeleteDomain")
     fun deleteDomain(@Query("DOMAIN_NAME") Name: String):Call<domainDelete>
 }
