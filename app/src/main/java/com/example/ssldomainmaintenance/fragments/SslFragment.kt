@@ -55,7 +55,6 @@ class SslFragment : Fragment() {
         getMyData()
 
     }
-
     private fun getMyData() {
         val retrofitBuilder = Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())
