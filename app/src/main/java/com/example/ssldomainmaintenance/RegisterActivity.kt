@@ -40,9 +40,6 @@ class RegisterActivity : AppCompatActivity(),View.OnClickListener,View.OnFocusCh
             signup(email,confpass)
         }
     }
-
-
-
     private fun validateEmail():Boolean{
         var errorMessage:String? = null
         val value = mBinding.emailEt.text.toString()
@@ -77,7 +74,6 @@ class RegisterActivity : AppCompatActivity(),View.OnClickListener,View.OnFocusCh
         }
         return errorMessage == null
     }
-
     private fun validateConfirmPassword():Boolean{
         var errorMessage:String? = null
         val value = mBinding.passwordEt.text.toString()
@@ -112,7 +108,6 @@ class RegisterActivity : AppCompatActivity(),View.OnClickListener,View.OnFocusCh
 
     }
     override fun onClick(v: View?) {
-
     }
     override fun onFocusChange(v: View?, hasFocus: Boolean) {
 
@@ -169,7 +164,6 @@ class RegisterActivity : AppCompatActivity(),View.OnClickListener,View.OnFocusCh
     override fun onKey(v: View?, keyCode: Int, event: KeyEvent?): Boolean {
         return false
     }
-
     private fun signup(email: String, confpass: String) {
         val retrofitBuilder = Retrofit.Builder()
             .addConverterFactory(GsonConverterFactory.create())

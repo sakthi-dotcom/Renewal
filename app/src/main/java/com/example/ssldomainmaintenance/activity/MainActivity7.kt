@@ -5,6 +5,7 @@ import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.widget.*
+import androidx.appcompat.widget.SwitchCompat
 import com.example.ssldomainmaintenance.R
 import kotlinx.android.synthetic.main.activity_add_new_domain.*
 import retrofit2.Call
@@ -26,7 +27,7 @@ class MainActivity7 : AppCompatActivity() {
         val issued_to: EditText = findViewById(R.id.issuedTo2)
         val issued_on: EditText = findViewById(R.id.issuedOn1)
         val expires_on: EditText = findViewById(R.id.expires1)
-        val auto_renewal_enabled: EditText = findViewById(R.id.autoRenew1)
+        val auto_renewal_enabled:SwitchCompat = findViewById(R.id.autoRenew1)
         val btn: Button = findViewById(R.id.postBtn2)
 
         btn.setOnClickListener {
@@ -35,7 +36,7 @@ class MainActivity7 : AppCompatActivity() {
             val field3 = issued_to.text.toString().trim()
             val field4 = issued_on.text.toString().trim()
             val field5 = expires_on.text.toString().trim()
-            val field6 = auto_renewal_enabled.text.toString().trim()
+
 
             if (field1.isEmpty()){
                 domain_name.error = "Field can't be empty"
@@ -57,10 +58,6 @@ class MainActivity7 : AppCompatActivity() {
                 expires_on.error = "Field can't be empty"
                 return@setOnClickListener
             }
-            else if (field6.isEmpty()){
-                auto_renewal_enabled.error = "Field can't be empty"
-                return@setOnClickListener
-            }
 
 
             val pickedDate = issued_on.getText().toString().replace("/", "-")
@@ -75,7 +72,7 @@ class MainActivity7 : AppCompatActivity() {
 
 
 
-            if (auto_renewal_enabled.getText().toString() == "Yes" || auto_renewal_enabled.getText().toString() == "yes"){
+            if (auto_renewal_enabled.isChecked()){
                 auto_renewal_enabled.setText(true.toString())
             }
             else

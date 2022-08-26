@@ -6,6 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.*
+import androidx.appcompat.widget.SwitchCompat
 import com.example.ssldomainmaintenance.R
 import kotlinx.android.synthetic.main.activity_add_new_ssl.*
 import retrofit2.Call
@@ -30,7 +31,7 @@ class MainActivity6 : AppCompatActivity() {
         val issuedOn: EditText = findViewById(R.id.issuedOn)
         val expiresOn: EditText = findViewById(R.id.expires)
         val certificate_type:Spinner = findViewById(R.id.certiTypeSpinner)
-        val auto_renewal_enabled1: EditText = findViewById(R.id.renewal)
+        val auto_renewal_enabled1:SwitchCompat = findViewById(R.id.autoRenew2)
         val btn: Button = findViewById(R.id.postBtn1)
 
         btn.setOnClickListener {
@@ -63,10 +64,7 @@ class MainActivity6 : AppCompatActivity() {
                 return@setOnClickListener
             }
 
-            else if (field6.isEmpty()){
-                auto_renewal_enabled1.error = "Field can't be empty"
-                return@setOnClickListener
-            }
+
 
 
             val pickedDate = issuedOn.getText().toString().replace("/", "-")
@@ -80,7 +78,7 @@ class MainActivity6 : AppCompatActivity() {
             val temp1 = expdate.time
             val epochExp = temp1 / 1000
 
-            if (auto_renewal_enabled1.getText().toString() == "Yes" || auto_renewal_enabled1.getText().toString() == "yes"){
+            if (auto_renewal_enabled1.isChecked()){
                 auto_renewal_enabled1.setText(true.toString())
             }
             else
