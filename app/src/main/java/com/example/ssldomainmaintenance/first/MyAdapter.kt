@@ -51,7 +51,7 @@ class MyAdapter(val context: Context, val ssList: List<sslDataItem>):RecyclerVie
 
     fun getDate(timestamp: Long): String {
         val time = Date(timestamp * 1000)
-        val sdf = SimpleDateFormat("dd/MM/yyyy")
+        val sdf = SimpleDateFormat("d MMM yyyy")
         return sdf.format(time)
     }
 }
