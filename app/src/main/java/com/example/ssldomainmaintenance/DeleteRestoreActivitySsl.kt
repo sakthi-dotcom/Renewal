@@ -8,6 +8,7 @@ import android.widget.TextView
 import android.widget.Toast
 import androidx.appcompat.app.AlertDialog
 import com.example.ssldomainmaintenance.activity.*
+import com.example.ssldomainmaintenance.harddelete.permanentDelete
 import retrofit2.Call
 import retrofit2.Callback
 import retrofit2.Response
@@ -23,6 +24,7 @@ class DeleteRestoreActivitySsl : AppCompatActivity() {
 
         var pass: String = ""
         val restore: Button = findViewById(R.id.ssl_restore_btn)
+        val clearSsl:Button = findViewById(R.id.harddltssl)
         val subtit: TextView = findViewById(R.id.rssl_issuer)
         val is_to: TextView = findViewById(R.id.rssl_issued)
         val is_on: TextView = findViewById(R.id.rssl_isson)
@@ -63,6 +65,31 @@ class DeleteRestoreActivitySsl : AppCompatActivity() {
             val createBuild: AlertDialog = eBuilder.create()
             createBuild.show()
         }
+        clearSsl.setOnClickListener {
+            hardDeleteSsl(con_final)
+        }
+
+
+    }
+
+    private fun hardDeleteSsl(con_final: String) {
+        val retrofit = Retrofit.Builder()
+            .baseUrl("http://192.168.1.172:5001/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+        val retrofitAPI = retrofit.create(permanentDelete::class.java)
+        val call:Call<sslDelete> = retrofitAPI.ssl_hard(Name = con_final)
+        call.enqueue(object : Callback<sslDelete?> {
+            override fun onResponse(call: Call<sslDelete?>, response: Response<sslDelete?>) {
+                Toast.makeText(this@DeleteRestoreActivitySsl,"Deleted Successfully!!",Toast.LENGTH_SHORT).show()
+                val kout = Intent(this@DeleteRestoreActivitySsl,MainActivity::class.java)
+                startActivity(kout )
+            }
+
+            override fun onFailure(call: Call<sslDelete?>, t: Throwable) {
+                TODO("Not yet implemented")
+            }
+        })
 
 
     }

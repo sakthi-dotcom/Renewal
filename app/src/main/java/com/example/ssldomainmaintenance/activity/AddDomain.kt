@@ -16,5 +16,8 @@ interface AddDomain {
     @DELETE("api/Domain/SoftDeleteDomain")
     fun deleteDomain(@Query("DOMAIN_NAME") Name: String):Call<domainDelete>
 
+    @DELETE("api/Domain/HardDeleteDomain")
+    fun domain_hard(@Query("DOMAIN_NAME") Name: String):Call<domainDelete>
+
 
 }

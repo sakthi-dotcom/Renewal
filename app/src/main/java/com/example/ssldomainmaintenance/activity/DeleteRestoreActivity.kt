@@ -24,8 +24,8 @@ class DeleteRestoreActivity : AppCompatActivity() {
         setContentView(R.layout.activity_delete_restore)
 
         var pass: String = ""
-       // val remove: Button = findViewById(R.id.hardDeleteButton)
         val restore: Button = findViewById(R.id.restoreButton)
+        val clearDomain:Button = findViewById(R.id.harddltdomain)
         val subtit: TextView = findViewById(R.id.delDomain1)
         val is_to: TextView = findViewById(R.id.delDomain2)
         val auto_renew1: TextView = findViewById(R.id.delDomain3)
@@ -50,21 +50,7 @@ class DeleteRestoreActivity : AppCompatActivity() {
 
         }
 
- /*       remove.setOnClickListener {
-            val dia = AlertDialog.Builder(this)
-            dia.setTitle("Restore")
-            dia.setMessage("Are you sure want to Restore? ")
-            dia.setPositiveButton("Yes") { Dialog, which ->
-                harddelete(pass)
-                Toast.makeText(this, "Kickout Successfully", Toast.LENGTH_SHORT).show()
-                finish()
-            }
-            dia.setNegativeButton("No") { Dialog, which ->
-            }
-            val createBuild: AlertDialog = dia.create()
-            createBuild.show()
-        }
-*/
+
         restore.setOnClickListener {
             val eBuilder = AlertDialog.Builder(this)
             eBuilder.setTitle("Restore")
@@ -80,27 +66,33 @@ class DeleteRestoreActivity : AppCompatActivity() {
             val createBuild:AlertDialog = eBuilder.create()
             createBuild.show()
         }
+        clearDomain.setOnClickListener {
+            deleteDomain(con_final)
+        }
 
     }
 
-  /*  private fun harddelete(pass: String) {
-       val retrofit = Retrofit.Builder()
-           .baseUrl("http://192.168.1.172:5001/")
-           .addConverterFactory(GsonConverterFactory.create())
-           .build()
-        val retrofitApi = retrofit.create(permanentDelete::class.java)
-        val call:Call<domainDelete> = retrofitApi.domain_hard(pass)
+    private fun deleteDomain(con_final: String) {
+        val retrofit = Retrofit.Builder()
+            .baseUrl("http://192.168.1.172:5001/")
+            .addConverterFactory(GsonConverterFactory.create())
+            .build()
+        val retrofitAPI = retrofit.create(permanentDelete::class.java)
+        val call:Call<domainDelete> = retrofitAPI.domain_hard(Name = con_final)
         call.enqueue(object : Callback<domainDelete?> {
             override fun onResponse(call: Call<domainDelete?>, response: Response<domainDelete?>) {
-                val out = Intent(this@DeleteRestoreActivity,MainActivity::class.java)
-                startActivity(out)
+                Toast.makeText(this@DeleteRestoreActivity,"Deleted Successfully!!",Toast.LENGTH_SHORT).show()
+                val kout = Intent(this@DeleteRestoreActivity,MainActivity::class.java)
+                startActivity(kout )
             }
 
             override fun onFailure(call: Call<domainDelete?>, t: Throwable) {
                 TODO("Not yet implemented")
             }
         })
-    }*/
+
+    }
+
 
     private fun restoreData(con_final: String) {
         val retrofit = Retrofit.Builder()
