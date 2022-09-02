@@ -13,10 +13,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.example.ssldomainmaintenance.MyAdapter
 import com.example.ssldomainmaintenance.R
-import com.example.ssldomainmaintenance.activity.MainActivity2
-import com.example.ssldomainmaintenance.activity.MainActivity6
-import com.example.ssldomainmaintenance.activity.sslDataItem
-import com.example.ssldomainmaintenance.activity.sslInterface
+import com.example.ssldomainmaintenance.activity.*
 import kotlinx.android.synthetic.main.fragment_ssl.view.*
 import retrofit2.Call
 import retrofit2.Callback
@@ -41,6 +38,9 @@ class SslFragment : Fragment() {
        val view = inflater.inflate(R.layout.fragment_ssl, container, false)
         view.floatBtn1.setOnClickListener {
             startActivity(Intent(requireActivity(),MainActivity6::class.java))
+        }
+        view.floatBtn3.setOnClickListener {
+            startActivity(Intent(requireActivity(),SslRestore::class.java))
         }
         return view
     }

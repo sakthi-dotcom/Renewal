@@ -38,7 +38,14 @@ class DomainFragment : Fragment() {
             val intent = Intent(requireActivity(),MainActivity7::class.java)
             startActivity(intent)
         }
+
+        view1.floatBtn3.setOnClickListener {
+            val i = Intent(requireActivity(),DomainRestore::class.java)
+            startActivity(i)
+        }
         return view1
+
+
     }
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
@@ -69,7 +76,7 @@ class DomainFragment : Fragment() {
                 mAdapter.setOnClicklistener(object :MyAdapter1.onItemClicklistener{
                     override fun onItemClick(dataItem: domainDataItem) {
                         val intent = Intent(requireContext(),MainActivity4::class.java)
-                       intent.putExtra("data1",dataItem)
+                        intent.putExtra("data1",dataItem)
                         intent.putExtra("data4",dataItem.domain_name)
                         startActivity(intent)
                     }
@@ -80,4 +87,4 @@ class DomainFragment : Fragment() {
             }
         })
     }
-    }
+}

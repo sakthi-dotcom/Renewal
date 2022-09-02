@@ -98,7 +98,7 @@ class MainActivity5 : AppCompatActivity() {
            val call:Call<update> =  retrofitAPI.updateDate(Name = con_final , issued_on = epoch, expires_on = expepoch)
            call.enqueue(object : Callback<update?> {
                override fun onResponse(call: Call<update?>, response: Response<update?>) {
-                   Toast.makeText(this@MainActivity5,"Date Changed",Toast.LENGTH_SHORT).show()
+                   Toast.makeText(this@MainActivity5,"Changed",Toast.LENGTH_SHORT).show()
                    val out = Intent(this@MainActivity5,MainActivity::class.java)
                    startActivity(out)
                }

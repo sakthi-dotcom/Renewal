@@ -4,6 +4,7 @@ import android.app.DatePickerDialog
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.util.Log
 import android.widget.Button
 import android.widget.DatePicker
 import android.widget.EditText
@@ -42,7 +43,6 @@ class MainActivity8 : AppCompatActivity() {
         val y2 = c2.get(Calendar.YEAR)
 
         but.setOnClickListener {
-
 
             val pickedDate = isDate.getText().toString().replace("/", "-")
             val date = SimpleDateFormat("dd-MM-yyyy").parse(pickedDate)
@@ -91,6 +91,7 @@ class MainActivity8 : AppCompatActivity() {
             .build()
         val retrofitAPI = retrofit.create(AddSsl::class.java)
         val final=intent.getStringExtra("data3")
+        Log.d("final",final.toString())
         val call: Call<update1> =  retrofitAPI.updateDate1(Name = con_final1 , issued_on = epoch, expires_on = expepoch)
         call.enqueue(object : Callback<update1?> {
             override fun onResponse(call: Call<update1?>, response: Response<update1?>) {

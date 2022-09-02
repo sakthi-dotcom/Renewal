@@ -37,7 +37,7 @@ class RegisterActivity : AppCompatActivity(),View.OnClickListener,View.OnFocusCh
             val email = mBinding.emailEt.text.toString().trim()
             val password = mBinding.passwordEt.text.toString().trim()
             val confpass = mBinding.cPasswordEt.text.toString().trim()  
-            signup(email,confpass)
+            signup(email,password)
         }
     }
     private fun validateEmail():Boolean{

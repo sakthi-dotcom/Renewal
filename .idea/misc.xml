@@ -6,6 +6,7 @@
         <entry key="../../../../layout/custom_preview.xml" value="0.10581534772182254" />
         <entry key="../../Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_dropdown_item.xml" value="0.24166666666666667" />
         <entry key="../../Android/Sdk/platforms/android-32/data/res/layout/simple_spinner_item.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/drawable/bg.xml" value="0.1695" />
         <entry key="app/src/main/res/drawable/calendar.xml" value="0.1725" />
         <entry key="app/src/main/res/drawable/email.xml" value="0.174" />
         <entry key="app/src/main/res/drawable/gradient.xml" value="0.1685" />
@@ -19,6 +20,9 @@
         <entry key="app/src/main/res/drawable/track.xml" value="0.167" />
         <entry key="app/src/main/res/layout/activity_add_new_domain.xml" value="0.25" />
         <entry key="app/src/main/res/layout/activity_add_new_ssl.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/activity_delete_restore.xml" value="0.22552083333333334" />
+        <entry key="app/src/main/res/layout/activity_delete_restore_ssl.xml" value="0.240625" />
+        <entry key="app/src/main/res/layout/activity_domain_restore.xml" value="0.240625" />
         <entry key="app/src/main/res/layout/activity_main.xml" value="0.21" />
         <entry key="app/src/main/res/layout/activity_main2.xml" value="0.24166666666666667" />
         <entry key="app/src/main/res/layout/activity_main3.xml" value="0.22" />
@@ -31,11 +35,15 @@
         <entry key="app/src/main/res/layout/activity_splash_screen.xml" value="0.24166666666666667" />
         <entry key="app/src/main/res/layout/activity_ssl.xml" value="0.24166666666666667" />
         <entry key="app/src/main/res/layout/activity_ssl_edit.xml" value="0.24166666666666667" />
+        <entry key="app/src/main/res/layout/activity_ssl_restore.xml" value="0.240625" />
         <entry key="app/src/main/res/layout/add_item.xml" value="0.240625" />
         <entry key="app/src/main/res/layout/card_layout.xml" value="0.25" />
         <entry key="app/src/main/res/layout/card_layout2.xml" value="0.25" />
+        <entry key="app/src/main/res/layout/card_layout3.xml" value="0.23958333333333334" />
+        <entry key="app/src/main/res/layout/card_layout4.xml" value="0.23958333333333334" />
         <entry key="app/src/main/res/layout/card_layouy.xml" value="0.240625" />
         <entry key="app/src/main/res/layout/detail_item.xml" value="0.2" />
+        <entry key="app/src/main/res/layout/fragment_delete.xml" value="0.240625" />
         <entry key="app/src/main/res/layout/fragment_domain.xml" value="0.24166666666666667" />
         <entry key="app/src/main/res/layout/fragment_domain2.xml" value="0.24166666666666667" />
         <entry key="app/src/main/res/layout/fragment_logout.xml" value="0.24166666666666667" />

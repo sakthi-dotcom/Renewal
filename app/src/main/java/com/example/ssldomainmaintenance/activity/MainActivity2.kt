@@ -77,7 +77,6 @@ class MainActivity2 : AppCompatActivity() {
             createBuild.show()
         }
 
-
     }
 
     private fun deleteData1(con_final:String) {
@@ -93,7 +92,6 @@ class MainActivity2 : AppCompatActivity() {
                 val out = Intent(this@MainActivity2,MainActivity::class.java)
                 startActivity(out)
             }
-
             override fun onFailure(call: Call<sslDelete?>, t: Throwable) {
                 TODO("Not yet implemented")
             }

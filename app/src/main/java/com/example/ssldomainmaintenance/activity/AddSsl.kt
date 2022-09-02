@@ -14,6 +14,6 @@ interface AddSsl {
                    @Query("ISSUED_ON") issued_on:Long,
                    @Query("EXPIRES_ON")expires_on:Long):Call<update1>
 
-    @DELETE("api/SSL/HardDeleteSSL")
+    @DELETE("api/SSL/SoftDeleteSSL")
     fun deleteSsl(@Query("NAME") Name: String):Call<sslDelete>
 }
