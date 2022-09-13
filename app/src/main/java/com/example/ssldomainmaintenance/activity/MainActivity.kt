@@ -42,7 +42,7 @@ class MainActivity : AppCompatActivity() {
         fragmentTransaction.commit()
     }
 
-    override fun onCreateOptionsMenu(menu: Menu?): Boolean {
+        override fun onCreateOptionsMenu(menu: Menu): Boolean {
         menuInflater.inflate(R.menu.app_bar_menu,menu)
         return true
     }
